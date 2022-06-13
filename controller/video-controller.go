@@ -8,8 +8,8 @@ import (
 )
 
 type VideoController interface {
-	FindAll() []entity.Video
 	Save(ctx *gin.Context) entity.Video
+	FindAll() []entity.Video
 }
 
 type controller struct {
